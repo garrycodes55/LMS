@@ -1,0 +1,82 @@
+<div class="signup-auth">
+
+  <div *ngIf="showLogin==false"class="signup">
+    <form
+      class="common-form"
+      #signup="ngForm"
+      (ngSubmit)="signUp(signup.value)"
+    >
+      <h1>Sign Up</h1>
+      <input
+        class="form-input"
+        type="text"
+        placeholder="Enter name"
+        name="Name"
+        ngModel
+      />
+      {{ uname }}
+      <input
+        class="form-input"
+        type="email"
+        placeholder="Enter email"
+        name="Email"
+        ngModel
+      />
+      <input
+        class="form-input"
+        type="password"
+        placeholder="Enter password"
+        name="Password"
+        ngModel
+      />
+      <input
+        class="form-input"
+        type="text"
+        placeholder="Enter role"
+        name="Role"
+        ngModel
+      />
+      <button class="form-button">Sign Up</button>
+      <a (click)="openLogin()">Already have an account? Click to Login</a>
+    </form>
+  </div>
+  <!--Login Form-->
+  <div *ngIf="showLogin==true"class="signup">
+    <form
+      class="common-form"
+      #signup="ngForm"
+      (ngSubmit)="signUp(signup.value)"
+    >
+      <h1>Login</h1>
+      <input
+        class="form-input"
+        type="text"
+        placeholder="Enter name"
+        name="Name"
+        ngModel
+      />
+      {{ uname }}
+      <input
+        class="form-input"
+        type="email"
+        placeholder="Enter email"
+        name="Email"
+        ngModel
+      />
+      <input
+        class="form-input"
+        type="password"
+        placeholder="Enter password"
+        name="Password"
+        ngModel
+      />
+      <button class="form-button">Login</button>
+      <a (click)="showSignup()">Don't have an account? Click to Signup</a>
+    </form>
+
+  </div>
+
+    
+
+  </div>
+

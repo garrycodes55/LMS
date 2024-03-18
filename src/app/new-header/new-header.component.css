@@ -1,0 +1,29 @@
+
+.wrapper
+{
+
+
+width:1350px;
+
+}
+.list
+{
+position: fixed;
+left:300px;
+
+}
+.searchbar{
+
+  position: fixed;
+left:625px;
+top:45px;
+}
+
+.button
+{
+  position: fixed;
+left:860px;
+top:45px;
+color:crimson;
+text-decoration-color: crimson;
+}

@@ -1,0 +1,54 @@
+<div id="div1">
+  <h3> LEAD Team</h3>
+
+  Garima Saluja<br>
+  Aakriti Thawre<br>
+  Sujata Kaushik <br>
+  Carolle <br>
+  Pranjal Verma <br>
+</div>
+
+<div id="div2">
+  <h3> Designers</h3>
+  Abhishek<br>
+  Sumit<br>
+  Swagat <br>
+  Aditi <br>
+  Daniel <br>
+
+</div>
+
+<div id="div3">
+  <h3> Evaluators</h3>
+  Brayan<br>
+  Divyank<br>
+  Samar <br>
+  Adit <br>
+ Rose<br>
+
+</div>
+
+<div id="div4">
+  <h3> Mentors</h3>
+  Akanksha<br>
+  Vishnupriya<br>
+  Sridurga <br>
+  Ankit <br>
+  Karen <br>
+
+</div>
+
+
+  <br>
+  <br>
+  Name: <input type="text"  [(ngModel)]="name" name="Name" (ngModelChange)="fun(name)">
+  {{name}}
+  Email: <input type="email" [(ngModel)]="email" name="EMail">
+  <form #gfgform = "ngForm">
+    {{ gfgform.value | json }}
+    <br>
+    <br>
+    Name: <input type="text" name = 'name' ngModel>
+    Email: <input type="email" name = 'email' ngModel>
+  </form>
+

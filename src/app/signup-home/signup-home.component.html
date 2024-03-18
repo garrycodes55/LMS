@@ -1,0 +1,29 @@
+<div>
+  <iframe [src]="safeUrl" frameborder="0" allowfullscreen width="1348px" height="700px"></iframe>
+  <div class="table" >
+  <table class="table table-striped" >
+    <thead>
+      <tr>
+
+        <th scope="col">Course Content</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let country of countries">
+
+        <td>
+
+          {{ country.name }}
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <br>
+  <br>
+  <h3>Yay! You made it through the course :)</h3>
+  <ngb-progressbar type="danger" [value]="100" [striped]="true">Completed!</ngb-progressbar>
+  </div>
